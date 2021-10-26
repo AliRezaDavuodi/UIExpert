@@ -90,6 +90,19 @@ body {
     color: #534d4d;
     background-color: #fff; }
 
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s; }
+  .card:hover {
+    transform: translateY(-1.2rem) scale(1.01); }
+
 .link, .link:link, .link:visited {
   padding: 1rem 2rem;
   border-radius: 10rem;
@@ -216,9 +229,11 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    background-color: #f00;
     border-radius: 2px;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3); }
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+    transition: all 0.3s; }
+    .service__card:hover {
+      transform: translateY(-1rem) skew(-1deg); }
     .service__card-1 {
       grid-column: 2 / 3;
       background-image: linear-gradient(to bottom, #dfa871, #e6ad73); }
