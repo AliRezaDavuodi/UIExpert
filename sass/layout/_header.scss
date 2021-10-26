@@ -26,11 +26,6 @@
     padding: 1rem 5rem;
   }
 
-  &__logo {
-    img {
-    }
-  }
-
   &__list {
     @include flex;
     justify-content: flex-end;
@@ -84,38 +79,5 @@
         object-fit: cover;
       }
     }
-  }
-}
-
-.btn {
-  &,
-  &:visited,
-  &:link {
-    display: inline-block;
-    padding: 0.8rem 1.9rem;
-    text-decoration: none;
-    transition: all 0.3s;
-    box-shadow: 0 1rem 2rem rgba($black, 0.3);
-    border-radius: 10rem;
-    margin-top: 3rem;
-  }
-
-  &:hover {
-    transform: translateY(-0.5rem);
-    color: $white;
-  }
-
-  &:active {
-    transform: translateY(-0.2rem);
-    box-shadow: 0 1rem 2rem rgba($black, 0.5);
-  }
-
-  &-blue {
-    color: $white;
-    background-color: $blue;
-  }
-
-  &__icon {
-    margin-right: 1rem;
   }
 }
