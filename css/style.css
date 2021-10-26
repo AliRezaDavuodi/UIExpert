@@ -12,3 +12,96 @@ body {
   box-sizing: border-box;
   font-size: 1.6;
   line-height: 1.6; }
+
+.heading {
+  color: #534d4d; }
+  .heading-1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 7rem; }
+
+.paragraph {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative; }
+  .header::before {
+    content: "";
+    width: 65%;
+    height: 50%;
+    position: absolute;
+    top: -2rem;
+    right: 0;
+    background-image: url(../img/navBg.svg);
+    background-size: cover; }
+  .header__nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    padding: 1rem 5rem; }
+  .header__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 70%;
+    z-index: 5;
+    list-style: none; }
+  .header__item:not(:last-child) {
+    margin-right: 0.5rem; }
+  .header__link, .header__link:link, .header__link:visited {
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: 10rem;
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease; }
+  .header__link:hover {
+    background-color: #ff8923; }
+  .header__hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh; }
+    .header__hero--content {
+      width: 50%;
+      padding-left: 5rem; }
+    .header__hero--img {
+      width: 50%;
+      padding: 10rem; }
+      .header__hero--img img {
+        width: 100%;
+        object-fit: cover; }
+
+.btn, .btn:visited, .btn:link {
+  display: inline-block;
+  padding: 0.8rem 1.9rem;
+  text-decoration: none;
+  transition: all 0.3s;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 10rem;
+  margin-top: 3rem; }
+
+.btn:hover {
+  transform: translateY(-0.5rem);
+  color: #fff; }
+
+.btn:active {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
+
+.btn-blue {
+  color: #fff;
+  background-color: #3d37f1; }
+
+.btn__icon {
+  margin-right: 1rem; }

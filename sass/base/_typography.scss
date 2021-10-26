@@ -1,0 +1,14 @@
+.heading {
+  color: $lightBlack;
+
+  &-1 {
+    font-family: $lato;
+    font-weight: 700;
+    font-size: 7rem;
+  }
+}
+
+.paragraph {
+  font-size: 2rem;
+  font-family: $roboto;
+}
