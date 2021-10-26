@@ -42,19 +42,6 @@
   }
 
   &__link {
-    &,
-    &:link,
-    &:visited {
-      padding: 1rem 2rem;
-      color: $white;
-      border-radius: 10rem;
-      font-size: 2rem;
-      font-family: $lato;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: all 0.3s ease;
-    }
-
     &:hover {
       background-color: $orange;
     }

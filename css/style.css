@@ -14,9 +14,9 @@ body {
   line-height: 1.6; }
 
 .heading {
-  color: #534d4d; }
+  color: #534d4d;
+  font-family: "Lato", sans-serif; }
   .heading-1 {
-    font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 7rem; }
 
@@ -50,6 +50,18 @@ body {
 .btn__icon {
   margin-right: 1rem; }
 
+.link, .link:link, .link:visited {
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease; }
+
+.link-white {
+  color: #fff; }
+
 .header {
   display: flex;
   align-items: center;
@@ -82,15 +94,6 @@ body {
     list-style: none; }
   .header__item:not(:last-child) {
     margin-right: 0.5rem; }
-  .header__link, .header__link:link, .header__link:visited {
-    padding: 1rem 2rem;
-    color: #fff;
-    border-radius: 10rem;
-    font-size: 2rem;
-    font-family: "Lato", sans-serif;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all 0.3s ease; }
   .header__link:hover {
     background-color: #ff8923; }
   .header__hero {
