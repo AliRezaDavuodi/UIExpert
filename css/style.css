@@ -24,6 +24,8 @@ body {
   .heading-4 {
     color: #fff;
     font-size: 2.2rem; }
+    .heading-4--dark {
+      color: #534d4d; }
 
 .paragraph {
   font-size: 2rem;
@@ -66,15 +68,12 @@ body {
 .btn:active {
   transform: translateY(-0.2rem); }
 
-.btn-blue {
-  color: #fff;
-  background-color: #3d37f1; }
-
 .btn__icon {
   margin-right: 1rem; }
 
 .btn__primary {
   color: #fff;
+  background-color: #3d37f1;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
   .btn__primary:hover {
     color: #fff; }
@@ -102,6 +101,54 @@ body {
 
 .link-white {
   color: #fff; }
+
+.aboutUs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem; }
+  .aboutUs__img {
+    width: 50%;
+    padding: 5rem; }
+    .aboutUs__img img {
+      width: 100%;
+      object-fit: cover; }
+  .aboutUs__playBtn {
+    background-color: #3d37f1;
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    transition: all 0.3s;
+    border-radius: 50%;
+    cursor: pointer; }
+    .aboutUs__playBtn:hover {
+      transform: scale(1.1); }
+    .aboutUs__playBtn:active {
+      transform: scale(0.9); }
+    .aboutUs__playBtn img {
+      position: absolute;
+      top: 50%;
+      left: 55%;
+      transform: translate(-50%, -50%); }
+  .aboutUs__content {
+    padding: 5rem;
+    padding-right: 10rem; }
+    .aboutUs__content--footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 70%;
+      margin-top: 2rem; }
+      .aboutUs__content--footer--text {
+        position: relative; }
+        .aboutUs__content--footer--text::before {
+          content: "";
+          position: absolute;
+          height: 0.5rem;
+          width: 5rem;
+          background-color: #534d4d;
+          top: 50%;
+          left: -60%; }
 
 .header {
   display: flex;

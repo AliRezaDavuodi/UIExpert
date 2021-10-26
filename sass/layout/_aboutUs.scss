@@ -1,0 +1,66 @@
+.aboutUs {
+  @include flex;
+  justify-content: space-between;
+
+  padding: 5rem;
+
+  &__img {
+    width: 50%;
+    padding: 5rem;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__playBtn {
+    background-color: $blue;
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    transition: all 0.3s;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__content {
+    padding: 5rem;
+    padding-right: 10rem;
+
+    &--footer {
+      @include flex;
+      justify-content: space-between;
+
+      width: 70%;
+      margin-top: 2rem;
+
+      &--text {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          height: 0.5rem;
+          width: 5rem;
+          background-color: $lightBlack;
+          top: 50%;
+          left: -60%;
+        }
+      }
+    }
+  }
+}
