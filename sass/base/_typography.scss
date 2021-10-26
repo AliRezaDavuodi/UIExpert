@@ -6,9 +6,30 @@
     font-weight: 700;
     font-size: 7rem;
   }
+
+  &-2 {
+    font-size: 4rem;
+  }
+
+  &-4 {
+    color: $white;
+    font-size: 2.2rem;
+  }
 }
 
 .paragraph {
   font-size: 2rem;
   font-family: $roboto;
+
+  &-white {
+    color: $white;
+  }
+
+  &-md {
+    font-size: 1.8rem;
+  }
+
+  &-sm {
+    font-size: 1.6rem;
+  }
 }

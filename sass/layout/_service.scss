@@ -1,0 +1,64 @@
+.service {
+  padding: 10rem 3rem;
+
+  &__header {
+    text-align: center;
+  }
+
+  &__cards {
+    padding: 5rem 1rem;
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) repeat(3, minmax(min-content, 37rem)) minmax(
+        0,
+        2fr
+      );
+    grid-template-rows: repeat(2, 45rem);
+    grid-gap: 5rem 2rem;
+  }
+
+  &__card {
+    @include flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+    background-color: #f00;
+    border-radius: 2px;
+    box-shadow: 0 1rem 3rem rgba($black, 0.3);
+
+    &--img {
+    }
+
+    &--content {
+    }
+
+    &-1 {
+      grid-column: 2 / 3;
+      background-image: linear-gradient(to bottom, $brownLight, $brownDark);
+    }
+    &-2 {
+      grid-column: 3 / 4;
+      background-image: linear-gradient(to bottom, $skyBlueLight, $skyBlueDark);
+    }
+    &-3 {
+      grid-column: 4 / 5;
+      background-image: linear-gradient(to bottom, $purpleLight, $purpleDark);
+    }
+    &-4 {
+      grid-column: 2 / 3;
+      background-image: linear-gradient(
+        to bottom,
+        $cardBlueLight,
+        $cardBlueDark
+      );
+    }
+    &-5 {
+      grid-column: 3 / 4;
+      background-image: linear-gradient(to bottom, $indigoLight, $indigoDark);
+    }
+    &-6 {
+      grid-column: 4 / 5;
+      background-image: linear-gradient(to bottom, $redLight, $redDark);
+    }
+  }
+}
