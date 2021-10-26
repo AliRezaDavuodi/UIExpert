@@ -104,8 +104,6 @@ body {
     transform: translateY(-1.2rem) scale(1.01); }
 
 .link, .link:link, .link:visited {
-  padding: 1rem 2rem;
-  border-radius: 10rem;
   font-size: 2rem;
   font-family: "Lato", sans-serif;
   text-decoration: none;
@@ -113,7 +111,12 @@ body {
   transition: all 0.3s ease; }
 
 .link-white {
-  color: #fff; }
+  color: #fff;
+  border-radius: 10rem;
+  padding: 1rem 2rem; }
+
+.link-dark {
+  color: #534d4d; }
 
 .aboutUs {
   display: flex;
@@ -212,6 +215,55 @@ body {
       .header__hero--img img {
         width: 100%;
         object-fit: cover; }
+
+.portfolio {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8; }
+  .portfolio__items {
+    width: 50%;
+    height: 50%;
+    padding: 5rem;
+    align-self: flex-start; }
+    .portfolio__items--title {
+      margin-bottom: auto; }
+  .portfolio__menu {
+    margin-top: 5rem; }
+  .portfolio__list {
+    list-style: none; }
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 2rem; }
+  .portfolio__link {
+    padding-right: 3rem;
+    border-bottom: 1px solid transparent;
+    position: relative;
+    font-family: "Roboto", sans-serif; }
+    .portfolio__link::after {
+      content: "";
+      position: absolute;
+      bottom: -0.1rem;
+      left: -110%;
+      width: 100%;
+      height: 0.1rem;
+      background-color: #3d37f1;
+      opacity: 0;
+      transition: all 0.4s; }
+    .portfolio__link:hover {
+      color: #3d37f1; }
+    .portfolio__link:hover::after {
+      left: 0;
+      opacity: 1; }
+  .portfolio__cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%; }
+  .portfolio__card {
+    border: none;
+    width: 37rem;
+    height: 27rem; }
+    .portfolio__card img {
+      object-fit: cover; }
 
 .service {
   padding: 10rem 3rem; }
