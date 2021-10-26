@@ -219,6 +219,7 @@ body {
 .portfolio {
   display: flex;
   align-items: center;
+  padding: 15rem 10rem;
   background-color: #f8f8f8; }
   .portfolio__items {
     width: 50%;
@@ -234,14 +235,15 @@ body {
   .portfolio__item:not(:last-child) {
     margin-bottom: 2rem; }
   .portfolio__link {
-    padding-right: 3rem;
+    padding-right: 5rem;
     border-bottom: 1px solid transparent;
     position: relative;
-    font-family: "Roboto", sans-serif; }
+    font-family: "Roboto", sans-serif;
+    display: inline-block; }
     .portfolio__link::after {
       content: "";
       position: absolute;
-      bottom: -0.1rem;
+      bottom: -0.3rem;
       left: -110%;
       width: 100%;
       height: 0.1rem;
@@ -249,21 +251,59 @@ body {
       opacity: 0;
       transition: all 0.4s; }
     .portfolio__link:hover {
-      color: #3d37f1; }
+      color: #3d37f1;
+      transform: translateY(-0.5rem); }
     .portfolio__link:hover::after {
       left: 0;
       opacity: 1; }
-  .portfolio__cards {
+  .portfolio__gallery {
     display: flex;
     align-items: center;
+    padding: 5rem 0;
+    width: 50%;
     flex-wrap: wrap;
-    width: 50%; }
-  .portfolio__card {
-    border: none;
-    width: 37rem;
-    height: 27rem; }
-    .portfolio__card img {
-      object-fit: cover; }
+    overflow: hidden; }
+    .portfolio__gallery img {
+      width: 50%;
+      transform: scale(1.5);
+      margin: 1rem 0; }
+    .portfolio__gallery--menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 7rem;
+      margin: 0 auto; }
+      .portfolio__gallery--menu__item {
+        display: inline-block;
+        width: 4rem;
+        height: 1rem;
+        background-color: #3d37f1;
+        border-radius: 5rem;
+        position: relative; }
+        .portfolio__gallery--menu__item::after {
+          content: "";
+          width: 1rem;
+          height: 1rem;
+          border-radius: 50%;
+          background-color: #534d4d;
+          position: absolute;
+          top: 0;
+          left: -2rem;
+          cursor: pointer;
+          transition: all 0.2s; }
+        .portfolio__gallery--menu__item::before {
+          content: "";
+          width: 1rem;
+          height: 1rem;
+          border-radius: 50%;
+          background-color: #534d4d;
+          position: absolute;
+          top: 0;
+          right: -2rem;
+          cursor: pointer;
+          transition: all 0.2s; }
+          .portfolio__gallery--menu__item::before:hover {
+            background-color: red; }
 
 .service {
   padding: 10rem 3rem; }
