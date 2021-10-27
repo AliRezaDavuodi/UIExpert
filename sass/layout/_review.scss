@@ -1,0 +1,120 @@
+.review {
+  padding: 10rem 5rem;
+  background-color: $blueDark;
+  position: relative;
+  &__header {
+    text-align: center;
+
+    &--heading {
+      color: $white;
+    }
+  }
+
+  &__images {
+    position: absolute;
+    width: 45%;
+    height: 50%;
+    top: 0;
+
+    .imgs {
+      opacity: 0.5;
+      position: absolute;
+
+      &-1 {
+        top: 5%;
+        left: 30%;
+      }
+      &-2 {
+        top: 40%;
+        left: 70%;
+      }
+      &-3 {
+        bottom: 2%;
+        left: 50%;
+      }
+      &-4 {
+        bottom: 30%;
+        right: 75%;
+      }
+      &-5 {
+        top: 5%;
+        left: 45%;
+      }
+      &-6 {
+        top: 40%;
+        left: 70%;
+      }
+      &-7 {
+        bottom: 10%;
+        left: 30%;
+      }
+      &-8 {
+        bottom: 40%;
+        right: 50%;
+      }
+
+      &-9 {
+        bottom: 30%;
+        right: 45%;
+      }
+    }
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
+  }
+
+  &__content {
+    @include flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+
+    &--name {
+      color: $blueLight;
+    }
+
+    &--img__box {
+      width: 10rem;
+      height: 10rem;
+      margin: 3rem 0;
+      position: relative;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+
+      &--rank {
+        @include flex;
+        justify-content: center;
+        position: absolute;
+        bottom: -10%;
+        left: 50%;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color: $orangeDark2;
+        color: $white;
+      }
+    }
+  }
+
+  &__footer {
+    @include flex;
+    width: 80%;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-top: 1px solid rgba($gray, 0.8);
+    margin: 2rem auto;
+
+    &--heading {
+      font-family: $roboto;
+      color: $white;
+    }
+  }
+}
