@@ -30,6 +30,8 @@ body {
     font-size: 2.2rem; }
     .heading-4--dark {
       color: #534d4d; }
+  .heading-5 {
+    font-size: 2rem; }
   .heading-6 {
     font-size: 1.8rem; }
   .heading-white {
@@ -179,6 +181,47 @@ body {
           background-color: #534d4d;
           top: 50%;
           left: -60%; }
+
+.blogs {
+  padding: 10rem 5rem; }
+  .blogs__header {
+    text-align: center; }
+  .blogs__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem; }
+  .blogs__card {
+    width: 30%;
+    min-height: 55rem;
+    margin: 0 1rem;
+    overflow: hidden; }
+    .blogs__card--img {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 50%; }
+      .blogs__card--img img {
+        width: 100%;
+        transform: scale(1.5); }
+    .blogs__card--text {
+      text-align: left;
+      padding: 2rem; }
+      .blogs__card--text .heading {
+        margin-bottom: 1.5rem; }
+    .blogs__card--icon {
+      width: 100%;
+      padding: 2rem;
+      text-align: left; }
+      .blogs__card--icon img {
+        cursor: pointer; }
+  .blogs__brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem; }
+    .blogs__brands img:not(:last-child) {
+      margin-right: 1.5rem; }
 
 .featurs {
   display: flex;
@@ -507,6 +550,8 @@ body {
   display: flex;
   align-items: center;
   padding: 15rem 5rem; }
+  .workflow__ourWorkflow--title {
+    padding-left: 3rem; }
   .workflow__list {
     display: flex;
     align-items: center;

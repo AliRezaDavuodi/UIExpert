@@ -2,16 +2,9 @@
   @include flex;
   padding: 15rem 5rem;
 
-  &__img {
-    img {
-    }
-  }
-
   &__ourWorkflow {
     &--title {
-    }
-
-    &--items {
+      padding-left: 3rem;
     }
   }
 
@@ -19,14 +12,12 @@
     @include flex;
     flex-wrap: wrap;
     list-style: none;
-    // background-color: orange;
   }
 
   &__item {
     @include flex;
     justify-content: space-between;
     width: 45%;
-    // background-color: green;
     margin: 1rem;
 
     &--profile {
@@ -39,9 +30,6 @@
       height: 5.5rem;
       border-radius: 50%;
       background-color: #f00;
-    }
-
-    &--info {
     }
   }
 }
