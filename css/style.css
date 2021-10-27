@@ -32,6 +32,8 @@ body {
       color: #534d4d; }
   .heading-6 {
     font-size: 1.8rem; }
+  .heading-white {
+    color: #fff; }
 
 .paragraph {
   font-size: 2.1rem;
@@ -174,6 +176,31 @@ body {
           background-color: #534d4d;
           top: 50%;
           left: -60%; }
+
+.featurs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 15rem; }
+  .featurs__card {
+    text-align: left;
+    align-items: flex-start;
+    width: 35rem;
+    height: 35rem;
+    color: #fff;
+    margin: 0 2rem;
+    padding: 2rem 5rem;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .featurs__card-1 {
+      background-image: linear-gradient(rgba(19, 27, 124, 0.8), rgba(19, 27, 124, 0.8)), url(../../img/designimg.svg);
+      background-position: center; }
+    .featurs__card-2 {
+      background-image: linear-gradient(rgba(243, 111, 33, 0.8), rgba(243, 111, 33, 0.8)), url(../../img/SketchBg.svg);
+      background-position: center; }
+    .featurs__card-3 {
+      background-image: linear-gradient(rgba(165, 162, 246, 0.8), rgba(165, 162, 246, 0.8)), url(../../img/TestBg.svg);
+      background-position: center; }
 
 .header {
   display: flex;

@@ -1,0 +1,44 @@
+.featurs {
+  @include flex;
+  justify-content: center;
+  padding: 10rem 15rem;
+
+  &__card {
+    text-align: left;
+    align-items: flex-start;
+    width: 35rem;
+    height: 35rem;
+    color: $white;
+    margin: 0 2rem;
+    padding: 2rem 5rem;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 2rem rgba($black, 0.2);
+    &-1 {
+      background-image: linear-gradient(
+          rgba($DesignBlue, 0.8),
+          rgba($DesignBlue, 0.8)
+        ),
+        url(../../img/designimg.svg);
+
+      background-position: center;
+    }
+    &-2 {
+      background-image: linear-gradient(
+          rgba($SketchOrange, 0.8),
+          rgba($SketchOrange, 0.8)
+        ),
+        url(../../img/SketchBg.svg);
+
+      background-position: center;
+    }
+    &-3 {
+      background-image: linear-gradient(
+          rgba($TestingBlue, 0.8),
+          rgba($TestingBlue, 0.8)
+        ),
+        url(../../img/TestBg.svg);
+
+      background-position: center;
+    }
+  }
+}
