@@ -2,3 +2,14 @@
   display: flex;
   align-items: center;
 }
+
+@mixin colorWorkflow {
+  $colors: #3d37f1, #9997df, #ffba3f, #e66e6e, #66659f, #f17637, #37f1be,
+    #f137e5, #f13d37;
+
+  @each $color in $colors {
+    .workflow__item--profile-#{$color} {
+      background-color: $color;
+    }
+  }
+}
