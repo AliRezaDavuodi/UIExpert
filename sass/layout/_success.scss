@@ -1,0 +1,38 @@
+.ourSuccess {
+  @include flex;
+  justify-content: center;
+
+  padding: 10rem 5rem;
+
+  &__card {
+    @include flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30rem;
+    height: 30rem;
+    padding: 5rem;
+    background-color: $white;
+    margin: 1rem;
+    box-shadow: 0 1rem 2rem rgba($black, 0.2);
+    border-radius: 1rem;
+
+    &-1 {
+      background-image: linear-gradient(135deg, $indigoLight2, $indigoDark2);
+    }
+    &-2 {
+      background-image: linear-gradient(135deg, $pinkLigth, $pinkDark);
+    }
+    &-3 {
+      background-image: linear-gradient(135deg, $orangeLight, $orangeDark);
+    }
+  }
+
+  &__statistics {
+    @include flex;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+  }
+}

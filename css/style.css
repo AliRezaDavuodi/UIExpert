@@ -21,11 +21,17 @@ body {
     font-size: 7rem; }
   .heading-2 {
     font-size: 4rem; }
+  .heading-3 {
+    font-size: 3.8rem; }
+    .heading-3__white {
+      color: #fff; }
   .heading-4 {
     color: #fff;
     font-size: 2.2rem; }
     .heading-4--dark {
       color: #534d4d; }
+  .heading-6 {
+    font-size: 1.8rem; }
 
 .paragraph {
   font-size: 2rem;
@@ -344,3 +350,35 @@ body {
     .service__card-6 {
       grid-column: 4 / 5;
       background-image: linear-gradient(to bottom, #ff8088, #984141); }
+
+.ourSuccess {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 5rem; }
+  .ourSuccess__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30rem;
+    height: 30rem;
+    padding: 5rem;
+    background-color: #fff;
+    margin: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem; }
+    .ourSuccess__card-1 {
+      background-image: linear-gradient(135deg, #af94fd, #6651f3); }
+    .ourSuccess__card-2 {
+      background-image: linear-gradient(135deg, #ff95a5, #ff62a3); }
+    .ourSuccess__card-3 {
+      background-image: linear-gradient(135deg, #fbc9a4, #ff884a); }
+  .ourSuccess__statistics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    border-radius: 3rem;
+    margin-bottom: 1rem; }
