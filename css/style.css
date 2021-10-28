@@ -535,7 +535,7 @@ body {
       color: #fff; }
 
 .service {
-  padding: 10rem 3rem; }
+  padding: 10rem 0rem; }
   .service__header {
     text-align: center; }
   .service__cards {
@@ -545,33 +545,25 @@ body {
     grid-template-rows: repeat(2, 45rem);
     grid-gap: 5rem 2rem; }
   .service__card {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
     text-align: center;
-    border-radius: 2px;
+    border-radius: 5px;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    height: 40rem;
+    margin: 1rem 0; }
     .service__card:hover {
       transform: translateY(-1rem) skew(-1deg); }
     .service__card-1 {
-      grid-column: 2 / 3;
       background-image: linear-gradient(to bottom, #dfa871, #e6ad73); }
     .service__card-2 {
-      grid-column: 3 / 4;
       background-image: linear-gradient(to bottom, #41eae3, #2293b7); }
     .service__card-3 {
-      grid-column: 4 / 5;
       background-image: linear-gradient(to bottom, #69529f, #473966); }
     .service__card-4 {
-      grid-column: 2 / 3;
       background-image: linear-gradient(to bottom, #4386d2, #0962c5); }
     .service__card-5 {
-      grid-column: 3 / 4;
       background-image: linear-gradient(to bottom, #a5a2f6, #564fd6); }
     .service__card-6 {
-      grid-column: 4 / 5;
       background-image: linear-gradient(to bottom, #ff8088, #984141); }
 
 .ourSuccess {
