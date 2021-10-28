@@ -2,6 +2,11 @@
   display: flex;
   padding: 10rem 0;
 
+  &__card--box {
+    display: flex;
+    justify-content: center;
+  }
+
   &__card {
     display: flex;
     flex-direction: column;
