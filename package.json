@@ -8,7 +8,7 @@
     "live": "live-server",
     "start": "npm-run-all --parallel sass live",
     "compile": "node-sass sass/main.scss css/style.comp.css",
-    "compress": "node-sass sass/main.scss:css/style.css --output-style compressed",
+    "compress": "node-sass sass/main.scss css/style.css --output-style compressed",
     "build": "npm-run-all compress compile"
   },
   "author": "AliReza",
