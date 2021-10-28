@@ -1,0 +1,61 @@
+.blogs {
+  padding: 10rem 5rem;
+  &__header {
+    text-align: center;
+  }
+
+  &__cards {
+    @include flex;
+    justify-content: center;
+    padding: 5rem 2rem;
+  }
+
+  &__card {
+    width: 30%;
+    min-height: 55rem;
+    margin: 0 1rem;
+    overflow: hidden;
+
+    &--img {
+      @include flex;
+      width: 100%;
+      height: 50%;
+
+      img {
+        width: 100%;
+        transform: scale(1.5);
+      }
+    }
+
+    &--text {
+      text-align: left;
+      padding: 2rem;
+
+      .heading {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    &--icon {
+      width: 100%;
+      padding: 2rem;
+      text-align: left;
+
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__brands {
+    @include flex;
+    justify-content: center;
+    padding: 5rem 2rem;
+
+    img {
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+}
