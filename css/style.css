@@ -7,6 +7,9 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 1000px) {
+    html {
+      font-size: 45%; } }
 
 body {
   box-sizing: border-box;
@@ -140,7 +143,6 @@ body {
   justify-content: space-between;
   padding: 5rem; }
   .aboutUs__img {
-    width: 50%;
     padding: 5rem; }
     .aboutUs__img img {
       width: 100%;
@@ -165,11 +167,13 @@ body {
   .aboutUs__content {
     padding: 5rem;
     padding-right: 10rem; }
+    @media only screen and (max-width: 767px) {
+      .aboutUs__content {
+        text-align: center; } }
     .aboutUs__content--footer {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 70%;
       margin-top: 2rem; }
       .aboutUs__content--footer--text {
         position: relative; }
