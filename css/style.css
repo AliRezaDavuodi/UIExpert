@@ -193,6 +193,9 @@ body {
     padding: 5rem 2rem; }
   .blogs__card {
     border-radius: 0.5rem; }
+    @media only screen and (max-width: 767px) {
+      .blogs__card {
+        margin: 1rem 0; } }
     .blogs__card--img {
       display: flex;
       align-items: center;
@@ -223,28 +226,32 @@ body {
 
 .featurs {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10rem 15rem; }
+  padding: 10rem 0; }
   .featurs__card {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    width: 35rem;
-    height: 35rem;
+    justify-content: center;
+    padding: 1rem;
+    height: 30rem;
+    padding: 3rem;
     color: #fff;
-    margin: 0 2rem;
-    padding: 2rem 5rem;
-    border-radius: 2rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+    background-position: center; }
+    @media only screen and (max-width: 767px) {
+      .featurs__card {
+        width: 35rem;
+        margin: 1rem 0; } }
+    .featurs__card:hover {
+      transform: translateY(-1rem) scale(1.02); }
     .featurs__card-1 {
-      background-image: linear-gradient(rgba(19, 27, 124, 0.8), rgba(19, 27, 124, 0.8)), url(../../img/designimg.svg);
-      background-position: center; }
+      background-image: linear-gradient(rgba(19, 27, 124, 0.8), rgba(19, 27, 124, 0.8)), url(../../img/designimg.svg); }
     .featurs__card-2 {
-      background-image: linear-gradient(rgba(243, 111, 33, 0.8), rgba(243, 111, 33, 0.8)), url(../../img/SketchBg.svg);
-      background-position: center; }
+      background-image: linear-gradient(rgba(243, 111, 33, 0.8), rgba(243, 111, 33, 0.8)), url(../../img/SketchBg.svg); }
     .featurs__card-3 {
-      background-image: linear-gradient(rgba(165, 162, 246, 0.8), rgba(165, 162, 246, 0.8)), url(../../img/TestBg.svg);
-      background-position: center; }
+      background-image: linear-gradient(rgba(165, 162, 246, 0.8), rgba(165, 162, 246, 0.8)), url(../../img/TestBg.svg); }
 
 .footer {
   display: flex;
@@ -612,6 +619,9 @@ body {
   padding: 15rem 5rem; }
   .workflow__ourWorkflow--title {
     padding-left: 3rem; }
+    @media only screen and (max-width: 767px) {
+      .workflow__ourWorkflow--title {
+        text-align: center; } }
   .workflow__img {
     width: 100%;
     overflow: hidden; }
@@ -623,6 +633,9 @@ body {
     display: flex;
     align-items: center;
     margin: 1rem 0; }
+    @media only screen and (max-width: 767px) {
+      .workflow__item {
+        justify-content: center; } }
     .workflow__item--profile {
       color: #fff;
       width: 4rem;

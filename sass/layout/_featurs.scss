@@ -1,26 +1,36 @@
 .featurs {
-  @include flex;
-  justify-content: center;
-  padding: 10rem 15rem;
+  display: flex;
+  padding: 10rem 0;
 
   &__card {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    width: 35rem;
-    height: 35rem;
+    justify-content: center;
+    padding: 1rem;
+    height: 30rem;
+    padding: 3rem;
     color: $white;
-    margin: 0 2rem;
-    padding: 2rem 5rem;
-    border-radius: 2rem;
-    box-shadow: 0 1rem 2rem rgba($black, 0.2);
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 4rem rgba($black, 0.5);
+    transition: all 0.3s;
+    background-position: center;
+
+    @media only screen and (max-width: 767px) {
+      width: 35rem;
+      margin: 1rem 0;
+    }
+
+    &:hover {
+      transform: translateY(-1rem) scale(1.02);
+    }
+
     &-1 {
       background-image: linear-gradient(
           rgba($DesignBlue, 0.8),
           rgba($DesignBlue, 0.8)
         ),
         url(../../img/designimg.svg);
-
-      background-position: center;
     }
     &-2 {
       background-image: linear-gradient(
@@ -28,8 +38,6 @@
           rgba($SketchOrange, 0.8)
         ),
         url(../../img/SketchBg.svg);
-
-      background-position: center;
     }
     &-3 {
       background-image: linear-gradient(
@@ -37,8 +45,6 @@
           rgba($TestingBlue, 0.8)
         ),
         url(../../img/TestBg.svg);
-
-      background-position: center;
     }
   }
 }
