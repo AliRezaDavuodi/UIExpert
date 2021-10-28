@@ -455,7 +455,7 @@ body {
             background-color: red; }
 
 .review {
-  padding: 10rem 5rem;
+  padding: 10rem 0;
   background-color: #0c0f32;
   position: relative; }
   .review__header {
@@ -530,13 +530,10 @@ body {
         background-color: #ff992e;
         color: #fff; }
   .review__footer {
-    display: flex;
-    align-items: center;
-    width: 80%;
-    justify-content: space-between;
-    padding: 2rem 0;
-    border-top: 1px solid rgba(204, 204, 204, 0.8);
-    margin: 2rem auto; }
+    border-top: 1px solid rgba(204, 204, 204, 0.8); }
+    @media only screen and (max-width: 767px) {
+      .review__footer {
+        text-align: center; } }
     .review__footer--heading {
       font-family: "Roboto", sans-serif;
       color: #fff; }
