@@ -1,7 +1,5 @@
 .header {
-  @include flex;
-  justify-content: space-between;
-  flex-direction: column;
+  padding: 2rem;
 
   min-height: 100vh;
   position: relative;
@@ -14,25 +12,42 @@
     top: -2rem;
     right: 0;
     background-image: url(../img/navBg.svg);
-    background-size: cover;
+    background-size: 115%;
+    background-position: top left;
+    background-repeat: no-repeat;
+
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    @include flex;
+    justify-content: center;
+  }
+
+  &__navigation {
+    min-height: 20vh;
   }
 
   &__nav {
-    width: 100%;
-    @include flex;
-    justify-content: space-between;
+    z-index: 5;
 
-    height: 15vh;
-    padding: 1rem 5rem;
+    @media only screen and (max-width: 767px) {
+      margin-top: 3rem;
+    }
   }
-
   &__list {
     @include flex;
     justify-content: flex-end;
-
-    width: 70%;
-    z-index: 5;
     list-style: none;
+
+    @media only screen and (max-width: 767px) {
+      @include flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
@@ -42,6 +57,12 @@
   }
 
   &__link {
+    display: inline-block;
+    @media only screen and (max-width: 767px) {
+      color: $lightBlack;
+      margin: 1rem;
+    }
+
     &:hover {
       background-color: $orange;
       color: $white;
@@ -50,16 +71,16 @@
 
   &__hero {
     @include flex;
-    justify-content: space-between;
-
-    height: 80vh;
+    min-height: 80vh;
 
     &--content {
-      width: 50%;
-      padding-left: 5rem;
+      @media only screen and (max-width: 767px) {
+        text-align: center;
+      }
     }
+
     &--img {
-      width: 50%;
+      width: 100%;
       padding: 10rem;
 
       img {
