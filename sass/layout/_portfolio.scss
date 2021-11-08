@@ -1,10 +1,27 @@
 .portfolio {
   padding: 15rem 0rem;
   background-color: $darkWhite;
+  overflow: hidden;
+
+  &__pic--box {
+    &:first-child {
+      @media only screen and (max-width: 768px) {
+        margin-top: 6rem;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      margin-top: 1.5rem;
+    }
+  }
 
   &__pic {
     width: 100%;
     transform: scale(1.3);
+
+    @media only screen and (max-width: 768px) {
+      transform: scale(1.5);
+    }
   }
 
   &__items--title {
