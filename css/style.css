@@ -242,8 +242,9 @@ body {
     justify-content: center;
     padding: 1rem;
     height: 30rem;
-    padding: 3rem;
+    width: 80%;
     color: #fff;
+    padding: 5rem;
     border-radius: 0.5rem;
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
     transition: all 0.3s;
