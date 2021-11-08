@@ -1,5 +1,6 @@
 .blogs {
   padding: 10rem 5rem;
+  background-color: rgba(#e3f2fd, 0.1);
   &__header {
     text-align: center;
   }
@@ -17,6 +18,7 @@
     overflow: hidden;
     transition: all 0.2s;
     margin: 0 auto;
+    background-color: #fff;
 
     &:hover {
       transform: translateY(-1rem);

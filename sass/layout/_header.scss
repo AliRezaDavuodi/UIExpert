@@ -23,7 +23,10 @@
 
   &__logo {
     @include flex;
-    justify-content: center;
+
+    @media only screen and (max-width: 768px) {
+      justify-content: center;
+    }
   }
 
   &__navigation {
@@ -92,6 +95,7 @@
 
       img {
         width: 100%;
+        transform: scale(1.5);
         object-fit: cover;
       }
     }

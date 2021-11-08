@@ -41,6 +41,33 @@
       margin-right: 1rem;
       position: relative;
 
+      &-0 {
+        background-color: $blue;
+      }
+      &-1 {
+        background-color: #9997df;
+      }
+      &-2 {
+        background-color: #ffba3f;
+      }
+      &-3 {
+        background-color: #e66e6e;
+      }
+      &-4 {
+        background-color: #66659f;
+      }
+      &-5 {
+        background-color: #f17637;
+      }
+      &-6 {
+        background-color: #37f1be;
+      }
+      &-7 {
+        background-color: #f137e5;
+      }
+      &-8 {
+        background-color: #f13d37;
+      }
       .paragraph {
         position: absolute;
         top: 50%;
